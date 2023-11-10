@@ -1,0 +1,20 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE mapper PUBLIC "-//mybatis.org//DTD Mapper 3.0//EN" "http://mybatis.org/dtd/mybatis-3-mapper.dtd">
+<mapper namespace="com.axshare.mapper.SubjectMapper">
+
+    <!-- 通用查询映射结果 -->
+    <resultMap id="BaseResultMap" type="com.axshare.entity.Subject">
+        <id column="id" property="id" />
+        <result column="subject_name" property="subjectName" />
+        <result column="score" property="score" />
+        <result column="student_id" property="studentId" />
+        <result column="create_time" property="createTime" />
+        <result column="modify_time" property="modifyTime" />
+    </resultMap>
+
+    <!-- 通用查询结果列 -->
+    <sql id="Base_Column_List">
+        id, subject_name, score, student_id, create_time, modify_time
+    </sql>
+
+</mapper>
